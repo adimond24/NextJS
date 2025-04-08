@@ -5,7 +5,7 @@ describe('Home', () => {
     it('should have Docs text', () => {
         render(<Home />) //ARRANGE
 
-        const myElem = screen.getByText('Docs') //ACT
+        const myElem = screen.getByText(/docs/i) //ACT
 
         expect(myElem).toBeInTheDocument() //ASSERT
     })
